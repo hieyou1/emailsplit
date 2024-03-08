@@ -18,7 +18,7 @@ document.getElementById("gen").onclick = () => {
         let btn = document.createElement("button");
         btn.classList.add("btn", "btn-secondary");
         btn.onclick = () => navigator.clipboard.writeText(splitMails[i].join("\n"));
-        btn.innerText = `Copy list #${i + 1}`;
+        btn.innerText = `Copy list #${parseInt(i) + 1}`;
         document.getElementById("buttons").appendChild(btn);
     }
 };
